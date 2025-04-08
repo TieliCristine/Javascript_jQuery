@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        #botao {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilo que será aplicado quando o mouse estiver em cima */
+        #botao.hovered {
+            background-color: #2ecc71;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="botao">Estilo</button>
+</body>
+<script>
+    $('#botao').hover(
+        function() {
+            $(this).addClass('hovered');
+        },
+        function() {
+            $(this).removeClass('hovered');
+        }
+    );
+</script>
+</html>

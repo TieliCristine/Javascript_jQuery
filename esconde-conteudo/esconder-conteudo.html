@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Escondendo Conteúdo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <h2>Msg 1:</h2>
+    <p id="par">
+        Clique no botão abaixo para esconder esta mensagem.
+    </p>
+    <button id="btnpar">Esconder mensagem selecionando o parágrafo pelo ID</button>
+    <h2>Msg 2:</h2>
+    <p class="destaque">
+        Clique no botão abaixo para esconder esta mensagem.
+    </p>
+    <button id="btn">Esconder mensagem selecionando a classe</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#btnpar').click(function(){
+            $('p#par').hide();
+        });
+    });
+    $('#btn').click(function(){
+        $('p.destaque').hide();
+    });
+</script>
+</html>

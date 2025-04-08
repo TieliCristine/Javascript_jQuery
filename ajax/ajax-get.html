@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Requisição AJAX GET</title>
+    <style>
+        #conteudo {
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+            background-color: #2ecc71;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<h2>Informações do Produto</h2>
+<div id="conteudo">Clique no botão para carregar o produto.</div>
+<br>
+<button id="carregar">Carregar Produto</button>
+</body>
+<script>
+    $('#carregar').click(function () {
+        $.get('produto.json', function (data) {
+            var html = `<strong>Nome:</strong> ${data.nome}<br>
+                            <strong>Preço:</strong> ${data.preco}<br>
+                            <strong>Disponível:</strong> ${data.disponivel ? 'Sim' : 'Não'}`;
+            $('#conteudo').html(html);
+        });
+    });</script>
+</html>

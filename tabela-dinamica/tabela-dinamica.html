@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela dinâmica com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        .formulario {
+            margin-bottom: 10px;
+        }
+        .formulario input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista de Usuários</h2>
+
+<div class="formulario">
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="number" id="idade" placeholder="Idade">
+    <button id="adicionar">Adicionar</button>
+</div>
+
+<table id="tabela">
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Idade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Dados aparecerão aqui -->
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function(){
+
+        $('#adicionar').click(function(){
+            const nome = $('#nome').val().trim();
+            const email = $('#email').val().trim();
+            const idade = $('#idade').val().trim();
+
+            if(nome && email && idade){
+                $('#tabela tbody').append(`
+                        <tr>
+                            <td>${nome}</td>
+                            <td>${email}</td>
+                            <td>${idade}</td>
+                        </tr>
+                    `);
+
+                // Limpa os campos depois de adicionar
+                $('#nome, #email, #idade').val('');
+            } else {
+                alert('Por favor, preencha todos os campos!');
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>
