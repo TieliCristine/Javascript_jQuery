@@ -88,4 +88,4 @@ Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 🙌 Agradecimentos
 
-Agradecemos à equipe de **professores e monitores** da disciplina de Desenvolvimento de Front-end pela orientação e apoio durante o desenvolvimento deste projeto.
+Agradeço à equipe de **professores e monitores** da disciplina de Desenvolvimento de Front-end pela orientação e apoio durante o desenvolvimento deste projeto.
