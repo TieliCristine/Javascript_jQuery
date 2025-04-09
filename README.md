@@ -27,25 +27,38 @@ Demonstrar habilidades em desenvolvimento de front-end utilizando **JavaScript**
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **JavaScript** – Lógica da aplicação
-- **jQuery** – Manipulação de DOM, eventos e AJAX
-- **HTML** – Estruturação da aplicação
-- **CSS** – Estilização visual
+- **JavaScript**: Utilizado para criar a lógica da aplicação.
+- **jQuery**: Utilizado para manipular a árvore DOM, eventos e requisições AJAX.
+- **HTML**: Utilizado para estruturar o conteúdo da aplicação.
+- **CSS**: Utilizado para estilizar a aplicação.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-```
-📁 Projeto/
-├── index.html           # Página inicial
-├── sobre.html           # Página sobre o projeto
-├── contato.html         # Página de contato
-├── javascript.html      # Demonstrações com JavaScript
-├── jquery.html          # Demonstrações com jQuery
-├── styles.css           # Estilos da aplicação
-├── script.js            # Lógica com JavaScript
-└── jquery.js            # Biblioteca jQuery
+```bash
+javascript-jquery/
+├── 📁 data/
+│   │   └── product.json
+├── 📁 public/
+│   ├── 📁 css/
+│   │   └── styles.css
+│   ├── 📁 js/
+│   │   ├── script.js
+│   │   └── jquery.js
+├── 📁 pages/
+│   ├── 📁 examples/
+│   │   ├── event-hover-style.html
+│   │   ├── dom-hide-elements.html
+│   │   ├── jquery-dynamic-table.html
+│   │   └── ajax.html
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── javascript.html
+│   └── jquery.html
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -54,35 +67,30 @@ Demonstrar habilidades em desenvolvimento de front-end utilizando **JavaScript**
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
+   git clone https://github.com/TieliCristine/Javascript_jQuery.git
    ```
-2. Navegue até a pasta do projeto:
-   ```bash
-   cd nome-do-repo
-   ```
-3. Abra o arquivo `index.html` em seu navegador.
+2. Abra o arquivo `index.html` em seu navegador.
 
 ---
 
 ## 🤝 Contribuições
 
-Contribuições são muito bem-vindas!  
-Sinta-se à vontade para fazer um fork do projeto e enviar uma pull request com melhorias, correções ou novas ideias.
+Contribuições são bem-vindas! Para contribuir:
 
+- Faça um fork do repositório
+- Crie uma branch (`git checkout -b feature/MinhaFeature`)
+- Commit suas alterações (`git commit -m 'Adiciona minha feature'`)
+- Faça push para a branch (`git push origin feature/MinhaFeature`)
+- Abra um Pull Request
 ---
 
 ## 👩‍💻 Autora
 
 **Tieli Lehnen** – Desenvolvedora do projeto  
-💼 [LinkedIn](https://www.linkedin.com/in/seu-usuario)  
+💼 [LinkedIn](https://www.linkedin.com/in/tieli-cristine-lehnen)  
+<!--
 💻 [Portfólio](https://seuportfolio.com)
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**.  
-Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+-->
 
 ---
 
